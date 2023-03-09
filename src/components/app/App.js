@@ -1,21 +1,24 @@
 
-import './App.css';
+import './App.scss';
+import {Routes,Route} from 'react-router-dom'
 
+import Main from '../main/mai';
+import Our from '../../pages/our-coffee-page/Our';
 import Header from '../header/header';
-import SectionTitle from '../section-title/section-title';
-import About from '../about-us/about-us';
-import Best from '../our-best/our-best';
-import Footer from '../footer/footer';
+
+
+
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <SectionTitle/>
-      <About/>
-      <Best/>
-      <Footer/>
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<Header />}>
+          <Route index element={<Main />}/>
+          <Route path='our' element={ <Our />}/>
+        </Route>
+      </Routes>
+    </>
   );
 }
 

@@ -1,4 +1,5 @@
 import './section-title.scss'
+
 import vector from './Vector.svg'
 
 function SectionTitle () {
@@ -11,7 +12,6 @@ function SectionTitle () {
                     <img className='img' src={vector} alt='beans'></img>
                     <div className = 'line'></div>
                 </div>
-                
                 <p>We makes every day full of energy and taste</p>
                 <p>Want to try our beans?</p>
                 <button className='button'> More </button>

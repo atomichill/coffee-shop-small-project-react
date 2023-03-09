@@ -5,9 +5,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    position: absolute;
     height: 40px;
-
+    
 
     
     .li-wrap {
@@ -23,6 +23,11 @@
             font-size: 17px;
             line-height: 17px;
             color: #FFFFFF;
+            
+
+            .link {
+                color: white;
+            }
         }
         
         

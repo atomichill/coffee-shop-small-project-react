@@ -1,16 +1,17 @@
-.footer_wrap {
-    height: 150px;
+.header-wrap {
+    width: 500px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
+    padding: 50px;
+    height: 40px;
 
+
+    
     .li-wrap {
         width: 355px;
         display: flex;
         justify-content: space-around;
-        margin-bottom: 30px;
 
         li {
     
@@ -19,10 +20,9 @@
             font-weight: 400;
             font-size: 17px;
             line-height: 17px;
-            color: black;
+            color: #FFFFFF;
         }
         
         
     }
-    
 }

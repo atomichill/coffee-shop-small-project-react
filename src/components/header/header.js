@@ -1,6 +1,7 @@
 import '../../restart.css'
 import './header.scss';
 import beans from './coffee-beans.svg'
+import {Link, Outlet} from 'react-router-dom'
 
 function Header () {
     return (
@@ -13,18 +14,17 @@ function Header () {
                     <ul>
                         <div className='li-wrap'>
                             <li>
-                                Coffee house
+                                <Link to='/' className='link'>Coffee house</Link>
                             </li>
                             <li>
-                                Our coffee
+                                <Link to='our' className='link'>Our coffee</Link>
                             </li>
-                            <li>
-                                For your pleasure
-                            </li>  
                         </div> 
                     </ul>
                 </div>
             </header>
+
+            <Outlet/>
         </>
     )
 }

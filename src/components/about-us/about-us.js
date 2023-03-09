@@ -1,5 +1,5 @@
 import './about-us.scss'
-import bean from './bean2.svg'
+import Image from '../vector/vector';
 
 
 function About() {
@@ -7,11 +7,7 @@ function About() {
         <div className='about-wrap'>
             <div className='about-title'>
                 <h1>About Us</h1>
-                <div className = 'img__wrap'>
-                    <div className = 'line'></div>
-                    <img className='img' src={bean} alt='beans'></img>
-                    <div className = 'line'></div>
-                </div>
+                <Image/>
             </div>
 
             <div className='about-para'>
