@@ -12,13 +12,37 @@
     
 
     .about-title {
+
+        display: flex;
+        flex-direction: column;
+
         h1 {
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
             line-height: 35px;
-
+            margin-left: 50px;
             color: #000000;
+        }
+
+        .img__wrap {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+            margin-bottom: 55px;
+    
+            .line {
+                width: 60px;
+                height: 0px;
+                margin: 10px;
+                border: 1px solid black;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            }
+            .img {
+                height: 40px;
+                color: black;
+            } 
+
         }
     }
 

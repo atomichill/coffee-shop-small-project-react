@@ -1,5 +1,6 @@
 import '../../restart.css'
 import './header.scss';
+import beans from './coffee-beans.svg'
 
 function Header () {
     return (
@@ -7,7 +8,7 @@ function Header () {
             <header>
                 <div className='header-wrap'>
                     <div>
-                        <img src='../../img/coffee-beans.svg' alt='coffee beans'></img>
+                        <img src={beans} alt='coffee beans'></img>
                     </div>
                     <ul>
                         <div className='li-wrap'>
