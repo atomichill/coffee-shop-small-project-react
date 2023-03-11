@@ -3,7 +3,7 @@ import girl from './girl.jpg'
 import Image from '../../../components/vector/vector';
 import Filter from '../../filter/filter';
 
-function Information () {
+const Information = ({data}) =>{
     return (
         <div className = 'info__bg'>
             <div className = 'info__wrap'>
@@ -28,7 +28,7 @@ function Information () {
                 </div>
             </div>
             <div className='flex-line'></div>
-            <Filter/>
+            <Filter data= {data}/>
         </div>
     )
 }

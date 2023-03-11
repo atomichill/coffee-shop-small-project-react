@@ -1,7 +1,11 @@
 import './filter.scss'
+
 import milkpack from '../../components/our-best/milkpack.png'
 
-function Filter () {
+const Filter = (props) =>{
+
+
+    const {country} = props
     return (
         <div className='filter__wrap'>
             <div className='filter_search'>
@@ -26,42 +30,13 @@ function Filter () {
                 <div className = 'cards__e'> 
                     <img src={milkpack} alt='coffee'/>
                     <p>AROMISTICO Coffee 1 kg</p>
-                    <p>brazil</p>
-                    <p>6.99$</p>
-                </div>
-                <div className = 'cards__e'> 
-                    <img src={milkpack} alt='coffee'/>
-                    <p>AROMISTICO Coffee 1 kg</p>
-                    <p>brazil</p>
-                    <p>6.99$</p>
-                </div>
-                <div className = 'cards__e'> 
-                    <img src={milkpack} alt='coffee'/>
-                    <p>AROMISTICO Coffee 1 kg</p>
-                    <p>brazil</p>
-                    <p>6.99$</p>
-                </div>
-                <div className = 'cards__e'> 
-                    <img src={milkpack} alt='coffee'/>
-                    <p>AROMISTICO Coffee 1 kg</p>
-                    <p>brazil</p>
-                    <p>6.99$</p>
-                </div>
-                <div className = 'cards__e'> 
-                    <img src={milkpack} alt='coffee'/>
-                    <p>AROMISTICO Coffee 1 kg</p>
-                    <p>brazil</p>
-                    <p>6.99$</p>
-                </div>
-                <div className = 'cards__e'> 
-                    <img src={milkpack} alt='coffee'/>
-                    <p>AROMISTICO Coffee 1 kg</p>
-                    <p>brazil</p>
+                    <p>{country}</p>
                     <p>6.99$</p>
                 </div>
             </div>
         </div>
     )
 }
-
+        
+   
 export default Filter;
